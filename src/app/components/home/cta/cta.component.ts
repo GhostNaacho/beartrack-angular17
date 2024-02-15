@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { cta } from '../../../data';
 
 @Component({
   selector: 'app-cta',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './cta.component.scss'
 })
 export class CtaComponent {
+
+  cta : any = cta;
 
 }
