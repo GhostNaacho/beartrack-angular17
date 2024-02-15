@@ -1,0 +1,20 @@
+.rounded-container {
+    h1, p{
+        color: white;
+    }
+    width: 100%; /* Set the desired width */
+    padding: 20px; /* Set the desired padding */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+    background-color: orangered; /* Set the background color */
+    
+}
+
+  .centered-btn {
+    margin-right: 50px;
+    padding: 10px 20px; /* Set padding for the button */
+    //font-size: 16px; /* Set font size for the button */
+    background-color: white; /* Set background color for the button */
+    color: black; /* Set text color for the button */
+    border: none; /* Remove border from the button */
+    border-radius: 5px; /* Set border radius for rounded corners */
+  }

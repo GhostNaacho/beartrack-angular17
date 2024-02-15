@@ -1,0 +1,43 @@
+.custom.card{
+    border-radius: 15px;
+}
+
+.custom-header-card{
+
+background: #050A1D;
+h2{
+    color: white;
+}
+
+}
+
+.custom-body-card{
+
+background: #050A1D;
+
+ul{
+
+    li{
+        border: none;
+        background: #050A1D;
+        p{
+            color: white;
+        }
+    }   
+}
+
+.btn-custom{
+    background: #050A1D;
+    color: white;
+    border: none;
+}
+    
+}
+
+.star-container {
+    display: flex;
+  }
+
+  .star {
+    margin-right: 5px;
+  }

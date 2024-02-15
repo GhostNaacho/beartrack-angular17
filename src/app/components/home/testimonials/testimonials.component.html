@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row text-center">
+        <h1 class="mx-auto">{{title}}</h1>
+        <br>
+        <p class="card-text" style="display: block;">Las voces de nuestros clientes hablan más alto que cualquier
+            palabra que podamos decir. Descubre
+            cómo BearTrack ha transformado la gestión de envíos para empresas logísticas de todos los
+            tamaños</p>
+    </div>
+    <br>
+    <div class="center-container">
+        <div class="row">
+
+            @for (row of comentList; track row.id) {
+                <div class="col-xs-12 col-sm-6 col-md-4 card-container">
+                    <div class="card custom.card">
+                        <div class="card-header custom-header-card">
+
+                            <div class="star-container">
+                                @for(number of numbersRange(1, row.stars);track number)
+                                {
+                                        <div class="star-rating">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orangered" width="24px" height="24px">
+                                                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" />
+                                            </svg>  
+                                        </div>
+                                }
+                            </div>
+
+
+                            
+                            
+                        </div>
+                        <div class="card-body custom-body-card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p style="float: left;">{{row.description}}</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="container">
+                                        <a href="#" style="margin-top: 4px; float:left ;" class="btn btn-primary btn-custom">{{row.clientName}}</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+    </div>
+</div>
+<br>

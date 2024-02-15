@@ -1,0 +1,25 @@
+<div class="container">
+    <nav class="navbar navbar-expand-xl navbar-ligth bg-ligth">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./../../../../assets/images/logo.png" alt="Your Logo" class="img-fluid" style="width: 150px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav justify-content-center" id="navbarNavAltMarkup" [class]="{ 'show': navbarOpen }">
+
+
+                <div class="navbar-nav">
+                    @for(row of navbarList; track row.name)
+                    {   
+                        <a class="nav-item nav-link">{{row.name}}</a>
+                    }   
+                    <button id="modal-demo" type="button" class="btn btn-outline-secondary "><b>CONTACTANOS</b></button>              
+                </div>
+                  
+            </div>
+            
+        </div>
+    </nav>
+</div>

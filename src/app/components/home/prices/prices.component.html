@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row text-center">
+        <h2 class="mx-auto">Precios</h2>
+        <br>
+        <p class="card-text" style="display: block;">Conoce más sobre nuestros planes y costos..</p>
+        <br>
+    </div>
+    
+    <div class="center-container">
+        <div class="row">
+                  
+              @for (row of cardList; track row.id) {
+                <div class="col-6 card-container">   
+                  <div class="card">
+                    <div class="card-header backg-orange">
+                      <h2><b>{{row.title}}</b></h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <p style="float: left;">Precio</p>
+                        <p style="float: right;">{{row.price}}</p>
+                      </li>
+                      <li class="list-group-item">
+                        <p style="float: left;">Usuario tipo administrador</p>
+                        <p style="float: right;">{{row.userAdmin}}</p>
+                      </li>
+                      <li class="list-group-item">
+                        <p style="float: left;">Usuario tipo Cliente</p>
+                        <p style="float: right;">{{row.userClient}}</p>
+                      </li>
+                      <li class="list-group-item">
+                        <p style="float: left;">Almacenamiento</p>
+                        <p style="float: right;">{{row.storage}}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              }
+          
+        </div>
+    </div>
+</div>
+<br>
