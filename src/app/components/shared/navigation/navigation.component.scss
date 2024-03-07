@@ -16,3 +16,17 @@
         }  
     }
 }
+
+.custom-slide-down-animation{
+    animation: slide-down 0.9s ease-in-out;
+}
+
+@keyframes slide-down{
+    from {
+      transform: translateY(-100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
