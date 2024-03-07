@@ -1,16 +1,28 @@
-.btn-custom
-{
+.btn-custom {
     color: white;
     background: orangered;
 }
 
-.nav-link{
+.nav-link {
     color: black;
     background: white;
 }
 
-.active
-{
+.active {
     color: white;
     background: orangered;
+}
+
+.custom-slide-from-Left-animation {
+    animation: slideFromLeft 0.9s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }

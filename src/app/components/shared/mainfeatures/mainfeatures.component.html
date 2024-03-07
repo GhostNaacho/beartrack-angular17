@@ -1,41 +1,31 @@
-<section>
-    <div class="container">
-        <div class="row text-center">
-            <!--titulo-->
-            <div>
-                <h1>{{title}}</h1>
-                <p> {{subTitle}}</p>
-            </div>
-
-            <!--links-->
-            <ul class="nav justify-content-center">
-
-                @for(row of items; track row.id)
-                {
-                <li class="nav-item" class="nav-item">
-                    <a id="ul-custom" class="nav-link rounded-pill" [class.active]="isActive(row.title)" (click)="handleMenuClick(row)">{{row.title}}</a>
-                </li>
-                }
-
-            </ul>
+<div class="container custom-slide-from-Left-animation">
+    <div class="row text-center">
+        <div>
+            <h1>{{title}}</h1>
+            <p> {{subTitle}}</p>
         </div>
-        <br>
-        <div class="row">
-
-            <div class="col-md-6">
-                <img [src]="items[selectedMenu].image" alt="Your Image Alt Text" class="img-fluid">
-            </div>
-
-            <div class="col-md-6">
-                <br>
-                <p>{{items[selectedMenu].description}}</p>
-                <br>
-                <div>
-                    <a class="btn btn-block rounded-pill btn-custom">AGENDA TU DEMO</a>
-                </div>
-            </div>
-
-        </div>
-
+        <ul class="nav justify-content-center">
+            @for(row of items; track row.id)
+            {
+            <li class="nav-item" class="nav-item">
+                <a id="ul-custom" class="nav-link rounded-pill" [class.active]="isActive(row.title)"
+                    (click)="handleMenuClick(row)">{{row.title}}</a>
+            </li>
+            }
+        </ul>
     </div>
-</section>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="items[selectedMenu].image" alt="Your Image Alt Text" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <br>
+            <p>{{items[selectedMenu].description}}</p>
+            <br>
+            <div>
+                <a class="btn btn-block rounded-pill btn-custom">AGENDA TU DEMO</a>
+            </div>
+        </div>
+    </div>
+</div>
