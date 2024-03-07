@@ -1,0 +1,13 @@
+.custom-slide-up-animation{
+    animation: slide-up 0.9s ease-in-out;
+}
+
+@keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
