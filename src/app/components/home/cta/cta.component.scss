@@ -18,3 +18,16 @@
     border: none; /* Remove border from the button */
     border-radius: 5px; /* Set border radius for rounded corners */
   }
+
+  .custom-slide-from-Rigth-animation{
+    animation: slideFromRigth 0.9s ease-in-out;
+}
+
+  @keyframes slideFromRigth {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
